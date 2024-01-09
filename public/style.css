@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-image: url('https://luc.id/wp-content/uploads/2018/11/shutterstock_739595833-2-scaled.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #f0f0f0;
+    border: 2px solid #333;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    
+}
+
+h1, h2 {
+    text-align: center;
+    color: #f8f2f2;
+}
+
+.input-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 2px 4px rgba(240, 236, 236, 0.1);
+    margin: 10px;
+    border-radius: 8px;
+    
+    min-height: 50vh;
+}
+
+.input-section label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-section input[type="text"],
+.input-section input[type="number"],
+.input-section input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-section button,
+.delete-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #e44d26;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-section button:hover,
+.delete-btn:hover {
+    background-color: #c5371d;
+}
+
+.expenses-list {
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+    color: #333;
+}
+
+th {
+    background: rgba(255, 255, 255, 0.3);
+    color: #fff;
+}
+
+.row-data {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row-data div {
+    width: 30%;
+}
+
+tfoot td {
+    font-weight: bold;
+}
+
+#total-section {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .row-data div {
+        width: 100%;
+    }
+}
